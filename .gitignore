@@ -1,0 +1,8 @@
+# Ignore text notes
+*.txt
+
+# Ignore dependencies & env
+node_modules/
+.env
+logs/
+dist/

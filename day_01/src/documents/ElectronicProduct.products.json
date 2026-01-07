@@ -1,0 +1,389 @@
+[
+    {
+    "productId": "1010010001",
+    "brand": "Apple",
+    "stock": 10,
+    "hashTag": [
+      "flagship",
+      "apple",
+      "iphone15promax"
+    ],
+    "ratings": {
+      "average": 4.9,
+      "count": 1523
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010002",
+    "brand": "Samsung",
+    "stock": 12,
+    "hashTag": [
+      "samsung",
+      "5g",
+      "midrange"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 953
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010003",
+    "brand": "Apple",
+    "stock": 20,
+    "hashTag": [
+      "apple",
+      "iphone",
+      "popular"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 2200
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010004",
+    "brand": "Samsung",
+    "stock": 15,
+    "hashTag": [
+      "samsung",
+      "flagship",
+      "5g"
+    ],
+    "ratings": {
+      "average": 4.9,
+      "count": 1880
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010005",
+    "brand": "OPPO",
+    "stock": 18,
+    "hashTag": [
+      "oppo",
+      "camera",
+      "5g"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 732
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010006",
+    "brand": "Xiaomi",
+    "stock": 35,
+    "hashTag": [
+      "xiaomi",
+      "budget",
+      "redmi"
+    ],
+    "ratings": {
+      "average": 4.6,
+      "count": 512
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1010010007",
+    "brand": "Apple",
+    "stock": 8,
+    "hashTag": [
+      "apple",
+      "flagship",
+      "iphone"
+    ],
+    "ratings": {
+      "average": 4.9,
+      "count": 1230
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020001",
+    "brand": "HP",
+    "stock": 22,
+    "hashTag": [
+      "laptop",
+      "office",
+      "hp"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 640
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020002",
+    "brand": "Acer",
+    "stock": 28,
+    "hashTag": [
+      "acer",
+      "office",
+      "student"
+    ],
+    "ratings": {
+      "average": 4.6,
+      "count": 480
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020003",
+    "brand": "MSI",
+    "stock": 10,
+    "hashTag": [
+      "gaming",
+      "msi",
+      "rtx4060"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 712
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020004",
+    "brand": "Lenovo",
+    "stock": 18,
+    "hashTag": [
+      "laptop",
+      "office",
+      "lenovo"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 540
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020005",
+    "brand": "ASUS",
+    "stock": 32,
+    "hashTag": [
+      "laptop",
+      "student",
+      "asus"
+    ],
+    "ratings": {
+      "average": 4.6,
+      "count": 390
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1020020006",
+    "brand": "Gigabyte",
+    "stock": 14,
+    "hashTag": [
+      "gaming",
+      "gigabyte",
+      "rtx4060"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 455
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1030030001",
+    "brand": "Apple",
+    "stock": 25,
+    "hashTag": [
+      "apple",
+      "airpods",
+      "audio"
+    ],
+    "ratings": {
+      "average": 4.9,
+      "count": 2100
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1030030002",
+    "brand": "Anker",
+    "stock": 80,
+    "hashTag": [
+      "anker",
+      "charger",
+      "accessories"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 950
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1030030003",
+    "brand": "Apple",
+    "stock": 120,
+    "hashTag": [
+      "ốp lưng",
+      "iPhone 15 Pro",
+      "MagSafe"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 320
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1040040001",
+    "brand": "ASUS",
+    "stock": 45,
+    "hashTag": [
+      "gaming",
+      "165hz",
+      "ASUS",
+      "IPS"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 1450
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1040040002",
+    "brand": "Intel",
+    "stock": 32,
+    "hashTag": [
+      "Intel",
+      "i7",
+      "14700K",
+      "CPU"
+    ],
+    "ratings": {
+      "average": 4.9,
+      "count": 2100
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1040040003",
+    "brand": "Razer",
+    "stock": 60,
+    "hashTag": [
+      "bàn phím cơ",
+      "Razer",
+      "gaming",
+      "RGB"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 800
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050001",
+    "brand": "LG",
+    "stock": 28,
+    "hashTag": [
+      "LG",
+      "Smart TV",
+      "4K UHD",
+      "55 inch"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 650
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050002",
+    "brand": "TCL",
+    "stock": 120,
+    "hashTag": [
+      "tcl",
+      "smarttv",
+      "32inch",
+      "google-tv"
+    ],
+    "ratings": {
+      "average": 4.6,
+      "count": 420
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050003",
+    "brand": "Samsung",
+    "stock": 90,
+    "hashTag": [
+      "samsung",
+      "4k",
+      "crystal-uhd",
+      "smarttv",
+      "43inch"
+    ],
+    "ratings": {
+      "average": 4.7,
+      "count": 860
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050004",
+    "brand": "Sony",
+    "stock": 70,
+    "hashTag": [
+      "sony",
+      "bravia",
+      "4k",
+      "google-tv",
+      "55inch"
+    ],
+    "ratings": {
+      "average": 4.8,
+      "count": 1150
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050005",
+    "brand": "Xiaomi",
+    "stock": 110,
+    "hashTag": [
+      "xiaomi",
+      "apromax",
+      "4k",
+      "google-tv",
+      "43inch"
+    ],
+    "ratings": {
+      "average": 4.6,
+      "count": 540
+    },
+    "isActive": true
+  },
+  {
+    "productId": "1050050006",
+    "brand": "Panasonic",
+    "stock": 85,
+    "hashTag": [
+      "panasonic",
+      "smarttv",
+      "32inch",
+      "android-tv"
+    ],
+    "ratings": {
+      "average": 4.5,
+      "count": 300
+    },
+    "isActive": true
+  }
+]

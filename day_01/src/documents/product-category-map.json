@@ -1,0 +1,362 @@
+{
+    "SmartPhone": {
+        "1010010001": [
+            {
+                "name": "smartphone flagship",
+                "memo": "Dòng cao cấp nhất của Apple, hiệu năng mạnh mẽ với chip A17 Pro và thiết kế Titanium"
+            },
+            {
+                "name": "smartphone AI-ready",
+                "memo": "Sẵn sàng cho các tính năng AI thế hệ mới nhờ Neural Engine mạnh mẽ và tối ưu iOS"
+            },
+            {
+                "name": "smartphone Pro/Creator",
+                "memo": "Lý tưởng cho nhà sáng tạo nội dung với camera Pro, quay video ProRes và khả năng xử lý đồ họa cao"
+            }
+        ],
+        "1010010002": [
+            {
+                "name": "smartphone flagship-inspired",
+                "memo": "Phiên bản Fan Edition kế thừa tinh hoa flagship Samsung với hiệu năng mạnh và thiết kế cao cấp"
+            },
+            {
+                "name": "smartphone camera-balanced",
+                "memo": "Camera đa dụng, chụp ảnh và quay video ổn định trong nhiều điều kiện"
+            },
+            {
+                "name": "smartphone value-performance",
+                "memo": "Hiệu năng mạnh trong tầm giá, phù hợp người dùng muốn trải nghiệm cao cấp với chi phí hợp lý"
+            }
+        ],
+        "1010010003": [
+            {
+                "name": "smartphone flagship",
+                "memo": "Mẫu iPhone cao cấp thế hệ trước, cân bằng giữa hiệu năng mạnh và giá trị sử dụng lâu dài"
+            },
+            {
+                "name": "smartphone smart-experience",
+                "memo": "Trải nghiệm thông minh và mượt mà nhờ chip A15 Bionic và hệ sinh thái iOS ổn định"
+            },
+            {
+                "name": "smartphone camera-focused",
+                "memo": "Phù hợp người dùng yêu thích chụp ảnh và quay video chất lượng cao với camera kép tối ưu"
+            }
+        ],
+        "1010010004": [
+            {
+                "name": "smartphone flagship",
+                "memo": "Dòng flagship tiêu chuẩn của Samsung với hiệu năng cao và thiết kế tinh gọn"
+            },
+            {
+                "name": "smartphone AI-powered",
+                "memo": "Tích hợp Galaxy AI, tối ưu giao tiếp, làm việc và trải nghiệm cá nhân hóa"
+            },
+            {
+                "name": "smartphone premium-daily",
+                "memo": "Phù hợp sử dụng hằng ngày ở phân khúc cao cấp với hiệu năng ổn định và hỗ trợ lâu dài"
+            }
+        ],
+        "1010010005": [
+            {
+                "name": "smartphone camera-portrait",
+                "memo": "Nổi bật với khả năng chụp chân dung chất lượng cao, tối ưu cho mạng xã hội"
+            },
+            {
+                "name": "smartphone premium-design",
+                "memo": "Thiết kế mỏng nhẹ, sang trọng, hướng đến người dùng yêu thích thẩm mỹ"
+            },
+            {
+                "name": "smartphone creator-friendly",
+                "memo": "Phù hợp sáng tạo nội dung với bộ nhớ lớn, camera ổn định và xử lý hình ảnh tốt"
+            }
+        ],
+        "1010010006": [
+            {
+                "name": "smartphone entry-level",
+                "memo": "Dòng smartphone phổ thông, đáp ứng tốt các nhu cầu cơ bản hằng ngày"
+            },
+            {
+                "name": "smartphone value-for-money",
+                "memo": "Giá thành thấp, cấu hình đủ dùng, phù hợp người dùng tiết kiệm"
+            },
+            {
+                "name": "smartphone basic-use",
+                "memo": "Phù hợp nghe gọi, lướt web, xem video và sử dụng các ứng dụng nhẹ"
+            }
+        ],
+        "1010010007": [
+            {
+                "name": "smartphone flagship",
+                "memo": "Dòng cao cấp nhất, hội tụ công nghệ mới nhất"
+            },
+            {
+                "name": "smartphone AI-powered",
+                "memo": "Tối ưu trải nghiệm bằng AI thông minh, cá nhân hóa người dùng"
+            },
+            {
+                "name": "smartphone Pro/Creator",
+                "memo": "Sinh ra cho sáng tạo nội dung, nổi bật với camera chuyên nghiệp"
+            }
+        ]
+    },
+    "Laptop": {
+        "1020020001": [
+            {
+                "name": "laptop office-premium",
+                "memo": "Laptop văn phòng cao cấp, cân bằng giữa hiệu năng, tính di động và thiết kế hiện đại"
+            },
+            {
+                "name": "laptop productivity",
+                "memo": "Tối ưu cho làm việc đa nhiệm, học tập và xử lý công việc hằng ngày"
+            },
+            {
+                "name": "laptop thin-light",
+                "memo": "Thiết kế mỏng nhẹ, phù hợp di chuyển thường xuyên"
+            }
+        ],
+        "1020020002": [
+            {
+                "name": "laptop office-standard",
+                "memo": "Laptop văn phòng phổ thông với hiệu năng ổn định và độ bền cao"
+            },
+            {
+                "name": "laptop value-performance",
+                "memo": "Cấu hình tốt trong tầm giá, đáp ứng hiệu quả nhu cầu học tập và làm việc"
+            },
+            {
+                "name": "laptop daily-use",
+                "memo": "Phù hợp sử dụng hằng ngày như soạn thảo, học online và giải trí nhẹ"
+            }
+        ],
+        "1020020003": [
+            {
+                "name": "laptop gaming",
+                "memo": "Laptop gaming hiệu năng cao, tối ưu cho các tựa game AAA"
+            },
+            {
+                "name": "laptop high-performance",
+                "memo": "Sức mạnh vượt trội cho xử lý đồ họa, render và tác vụ nặng"
+            },
+            {
+                "name": "laptop creator-gaming",
+                "memo": "Phù hợp cả chơi game lẫn sáng tạo nội dung chuyên sâu"
+            }
+        ],
+        "1020020004": [
+            {
+                "name": "laptop performance-office",
+                "memo": "Laptop văn phòng hiệu năng cao với CPU dòng H mạnh mẽ"
+            },
+            {
+                "name": "laptop multitasking",
+                "memo": "Xử lý mượt nhiều tác vụ cùng lúc, phù hợp dân kỹ thuật và văn phòng nâng cao"
+            },
+            {
+                "name": "laptop slim-performance",
+                "memo": "Thiết kế gọn nhẹ nhưng vẫn đảm bảo hiệu năng mạnh"
+            }
+        ],
+        "1020020005": [
+            {
+                "name": "laptop office-basic",
+                "memo": "Laptop văn phòng cơ bản, ổn định cho nhu cầu học tập và làm việc"
+            },
+            {
+                "name": "laptop student-friendly",
+                "memo": "Phù hợp sinh viên và người dùng phổ thông"
+            },
+            {
+                "name": "laptop value-for-money",
+                "memo": "Chi phí hợp lý, đáp ứng tốt các tác vụ thông thường"
+            }
+        ],
+        "1020020006": [
+            {
+                "name": "laptop gaming",
+                "memo": "Laptop gaming mạnh mẽ với GPU RTX 4060, tối ưu chơi game và đồ họa"
+            },
+            {
+                "name": "laptop creator-performance",
+                "memo": "Phù hợp dựng video, thiết kế đồ họa và render"
+            },
+            {
+                "name": "laptop value-gaming",
+                "memo": "Cấu hình gaming cao trong phân khúc giá cạnh tranh"
+            }
+        ]
+    },
+    "Phụ kiện điện thoại": {
+        "1030030001": [
+            {
+                "name": "audio-premium",
+                "memo": "Tai nghe cao cấp với chất lượng âm thanh vượt trội và chống ồn chủ động"
+            },
+            {
+                "name": "wireless-accessory",
+                "memo": "Phụ kiện không dây tiện lợi, kết nối nhanh và ổn định"
+            },
+            {
+                "name": "apple-ecosystem",
+                "memo": "Tối ưu cho hệ sinh thái Apple với trải nghiệm liền mạch"
+            }
+        ],
+        "1030030002": [
+            {
+                "name": "charging-accessory",
+                "memo": "Phụ kiện sạc nhanh, an toàn và hiệu quả cho nhiều thiết bị"
+            },
+            {
+                "name": "power-delivery",
+                "memo": "Hỗ trợ chuẩn USB-C Power Delivery, tối ưu tốc độ sạc"
+            },
+            {
+                "name": "portable-accessory",
+                "memo": "Thiết kế nhỏ gọn, phù hợp mang theo hằng ngày"
+            }
+        ],
+        "1030030003": [
+            {
+                "name": "protective-accessory",
+                "memo": "Phụ kiện bảo vệ thiết bị khỏi va đập và trầy xước"
+            },
+            {
+                "name": "magsafe-compatible",
+                "memo": "Hỗ trợ MagSafe, tương thích hoàn hảo với phụ kiện Apple"
+            },
+            {
+                "name": "iphone-specific",
+                "memo": "Thiết kế riêng cho iPhone 15 Pro, ôm sát và chính xác"
+            }
+        ]
+    },
+    "Linh kiện máy tính": {
+        "1040040001": [
+            {
+                "name": "gaming-display",
+                "memo": "Màn hình gaming tần số quét cao, hiển thị mượt mà"
+            },
+            {
+                "name": "high-refresh-rate",
+                "memo": "165Hz giúp giảm độ trễ và xé hình khi chơi game"
+            },
+            {
+                "name": "performance-monitor",
+                "memo": "Phù hợp chơi game, làm việc và giải trí chất lượng cao"
+            }
+        ],
+        "1040040002": [
+            {
+                "name": "high-end-cpu",
+                "memo": "CPU hiệu năng cao cho gaming và xử lý tác vụ nặng"
+            },
+            {
+                "name": "performance-hardware",
+                "memo": "Tối ưu cho đa nhiệm, render và làm việc chuyên sâu"
+            },
+            {
+                "name": "enthusiast-component",
+                "memo": "Linh kiện dành cho người dùng cao cấp và PC enthusiast"
+            }
+        ],
+        "1040040003": [
+            {
+                "name": "mechanical-keyboard",
+                "memo": "Bàn phím cơ cao cấp với độ phản hồi nhanh và chính xác"
+            },
+            {
+                "name": "gaming-peripheral",
+                "memo": "Thiết kế dành cho game thủ với độ bền và hiệu suất cao"
+            },
+            {
+                "name": "rgb-premium",
+                "memo": "Hệ thống RGB cao cấp, tùy chỉnh ánh sáng linh hoạt"
+            }
+        ]
+    },
+    "smart tivi": {
+        "1050050001": [
+            {
+                "name": "smart-tv-4k-premium",
+                "memo": "Smart TV 4K cao cấp với chất lượng hiển thị sắc nét và màu sắc chân thực"
+            },
+            {
+                "name": "smart-tv-large-screen",
+                "memo": "Màn hình lớn 55 inch, phù hợp phòng khách và không gian giải trí gia đình"
+            },
+            {
+                "name": "smart-tv-home-entertainment",
+                "memo": "Trải nghiệm giải trí toàn diện với nền tảng Smart TV ổn định"
+            }
+        ],
+        "1050050002": [
+            {
+                "name": "smart-tv-entry-level",
+                "memo": "Smart TV phổ thông, đáp ứng tốt nhu cầu giải trí cơ bản"
+            },
+            {
+                "name": "smart-tv-google-tv",
+                "memo": "Hệ điều hành Google TV với kho ứng dụng phong phú"
+            },
+            {
+                "name": "smart-tv-small-space",
+                "memo": "Kích thước 32 inch, phù hợp phòng ngủ hoặc không gian nhỏ"
+            }
+        ],
+        "1050050003": [
+            {
+                "name": "smart-tv-4k",
+                "memo": "Smart TV 4K Crystal UHD cho hình ảnh sắc nét và sống động"
+            },
+            {
+                "name": "smart-tv-mid-range",
+                "memo": "Phân khúc tầm trung, cân bằng giữa chất lượng và giá thành"
+            },
+            {
+                "name": "smart-tv-daily-entertainment",
+                "memo": "Phù hợp xem phim, truyền hình và giải trí hằng ngày"
+            }
+        ],
+        "1050050004": [
+            {
+                "name": "smart-tv-premium",
+                "memo": "Smart TV cao cấp với công nghệ xử lý hình ảnh đặc trưng của Sony"
+            },
+            {
+                "name": "smart-tv-google-tv",
+                "memo": "Trải nghiệm Google TV mượt mà với đề xuất nội dung thông minh"
+            },
+            {
+                "name": "smart-tv-cinema-experience",
+                "memo": "Tối ưu trải nghiệm xem phim với hình ảnh chân thực và màu sắc tự nhiên"
+            }
+        ],
+        "1050050005": [
+            {
+                "name": "smart-tv-4k-value",
+                "memo": "Smart TV 4K với mức giá cạnh tranh và cấu hình tốt"
+            },
+            {
+                "name": "smart-tv-google-tv",
+                "memo": "Hệ điều hành Google TV thân thiện và dễ sử dụng"
+            },
+            {
+                "name": "smart-tv-modern-design",
+                "memo": "Thiết kế hiện đại, viền mỏng, phù hợp không gian sống trẻ"
+            }
+        ],
+        "1050050006": [
+            {
+                "name": "smart-tv-basic",
+                "memo": "Smart TV cơ bản, dễ sử dụng và ổn định"
+            },
+            {
+                "name": "smart-tv-hd",
+                "memo": "Độ phân giải HD, đáp ứng tốt nhu cầu xem truyền hình phổ thông"
+            },
+            {
+                "name": "smart-tv-small-room",
+                "memo": "Kích thước 32 inch, phù hợp phòng ngủ và không gian nhỏ"
+            }
+        ]
+    }
+}
