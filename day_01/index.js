@@ -52,7 +52,7 @@ app.use('/api/cart', cartRouter); // [cart.routes.js]
 app.get('/', (req, res) => {
   res.json({
     message: "SDN302 API is running!",
-    swagger: '/api-docs',
+    swagger: '/api/docs',
     endpoint: {
       authen: '/api/authen',
       profile: '/api/profile',
