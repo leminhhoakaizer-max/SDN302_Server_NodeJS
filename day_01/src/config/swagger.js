@@ -86,7 +86,7 @@ export const setupSwagger = (app) => {
     //  |_ Local server: http://localhost:3000/api-docs
     //  |_ Vecel production: http://sdn302-server-nodejs.vercel.app
     app.use(
-        '/api-docs', 
+        '/api/docs', 
         swaggerUi.serve, 
         swaggerUi.setup(swaggerSpec, swaggerOptions)
     );
@@ -95,7 +95,7 @@ export const setupSwagger = (app) => {
     //      |_ Use for fontend
     //      |_ Use for Postman/Swagger Hub
     //      |_ Debug khi swagger UI error
-    app.get("/swagger.json", (req, res) => {
+    app.get('/api/swagger.json', (req, res) => {
         res.setHeader("Content-Type", "application/json");
         res.status(200).json(swaggerSpec);
     });
