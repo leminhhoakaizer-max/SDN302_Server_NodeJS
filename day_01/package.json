@@ -25,13 +25,13 @@
     "swagger-ui-express": "^5.0.1"
   },
   "scripts": {
-    "start": "nodemon index.js",
-    
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "migrate:products": "node ./src/utilities/migrateProducts.js",
     "migrate:categories": "node ./src/utilities/migrateCategories.js",
-
-    "seed:categories": "node src/build/updateCategorySeed.build.js", 
-    "seed:product-category": "node src/build/updateProductCategory.build.js"
+    "seed:categories": "node src/build/updateCategorySeed.build.js",
+    "seed:product-category": "node src/build/updateProductCategory.build.js",
+    "build": "echo 'Build step not needed for Node.js'"
   },
   "type": "module"
 }
