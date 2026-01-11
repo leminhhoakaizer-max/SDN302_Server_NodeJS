@@ -101,6 +101,9 @@ export const setupSwagger = (app) => {
     });
 };
 
+// Export swaggerSpec for serverless environments (Vercel) to reuse
+export { swaggerSpec };
+
 // Explain:
 // CORS (Cross Origin Resoucre Sharing): cơ chế bảo mật của trình duyệt
 // Tránh CORS error: 
