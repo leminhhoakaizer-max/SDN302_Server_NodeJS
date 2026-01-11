@@ -18,7 +18,7 @@ import cartRouter from './src/routes/cart.routes.js';
 // Swagger
 import { setupSwagger } from './src/config/swagger.js';
 
-const app = express()
+const app = express();
 
 // Call to [Connection database]
 DBConnection();
@@ -40,7 +40,7 @@ app.use(cors({
   credentials: true // cho phép gửi cookie
 }))
 
-// Set-up Swagger
+// Set-up/register Swagger
 setupSwagger(app);
 
 // API routes
@@ -54,7 +54,7 @@ app.use('/api/cart', cartRouter) // [cart.routes.js]
 app.get('/', (req, res) => {
   res.json({
     message: "SDN302 API is running!",
-    swagger: "/api-docs",
+    swagger: '/api-docs',
     endpoint: {
       authen: '/api/authen',
       profile: '/api/profile',
@@ -69,6 +69,10 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+if (process.env.VERCEL !== '1') {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+export default app;
