@@ -65,12 +65,13 @@ app.get('/', (req, res) => {
 
 // Start server
 // Start server (ONLY for local development)
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV !== 'production') {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
     console.log(`🚀 Local server running at http://localhost:${PORT}`);
   });
 }
+
 
 export default app;
 
