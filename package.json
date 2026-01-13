@@ -2,19 +2,18 @@
   "name": "sdn302-server",
   "private": true,
   "type": "module",
-
   "scripts": {
     "dev": "node --env-file=.env day_01/index.js",
     "start": "node api/index.js",
     "build": "echo \"No build step required\""
   },
-
   "dependencies": {
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.3",
