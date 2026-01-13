@@ -25,6 +25,7 @@
     "swagger-ui-express": "^5.0.1"
   },
   "scripts": {
+    "build": "echo \"No build step required\"",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "migrate:products": "node ./src/utilities/migrateProducts.js",
