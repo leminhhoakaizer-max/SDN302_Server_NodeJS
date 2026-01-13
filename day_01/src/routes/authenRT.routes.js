@@ -169,6 +169,13 @@ router.get('/current_user', verifyToken, getCurrentUser)
  *               email:
  *                 type: string
  *                 format: email
+ *     responses:
+ *       200:
+ *         description: Password reset email sent
+ *       404:
+ *         description: Email not found
+ *       500:
+ *         description: Server error
  */
 router.post('/forgot_password', forgotPasswordController)
 
