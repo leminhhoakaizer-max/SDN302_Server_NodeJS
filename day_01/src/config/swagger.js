@@ -12,7 +12,12 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Swagger Options
+/**
+ * Swagger configuration
+ * Works for BOTH:
+ *  - Local development
+ *  - Vercel Serverless
+ */
 const options = {
     // "Definiton": mô tả chung của OpenAPI
     definition: {
@@ -55,12 +60,8 @@ const options = {
 
     // Scan file
     apis: [
-        // Use [path.join + __dirname]: Run cả Local && Vecel
-        path.join(__dirname, "../routes/*.js"),
-        path.join(__dirname, "../model/*.js"),
-
-        // Fallback(dự phòng) => build trên Vecel
-        "./src/routes/*.js", "./src/model/*.js"
+        path.join(process.cwd(), "day_01/src/routes/*.js"),
+        path.join(process.cwd(), "day_01/src/model/*.js"),
     ],
 };
 
@@ -86,8 +87,8 @@ export const setupSwagger = (app) => {
     //  |_ Local server: http://localhost:3000/api-docs
     //  |_ Vecel production: http://sdn302-server-nodejs.vercel.app
     app.use(
-        '/api/docs', 
-        swaggerUi.serve, 
+        '/api/docs',
+        swaggerUi.serve,
         swaggerUi.setup(swaggerSpec, swaggerOptions)
     );
 
@@ -103,6 +104,6 @@ export const setupSwagger = (app) => {
 
 // Explain:
 // CORS (Cross Origin Resoucre Sharing): cơ chế bảo mật của trình duyệt
-// Tránh CORS error: 
+// Tránh CORS error:
 //      |_ enable broswers chia sẻ tài nguyên giữa các resources
 //      |_ Frontend giao tiếp với Backend khác domain 1 cách an toàn 
