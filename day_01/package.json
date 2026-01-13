@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "dependencies": {
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.1",
@@ -24,6 +25,7 @@
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
+
   "scripts": {
     "build": "echo \"No build step required\"",
     "start": "node index.js",

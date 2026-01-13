@@ -1,8 +1,5 @@
 {
   "name": "sdn302-server",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "start": "node api/index.js"
-  }
+  "type": "module"
 }
