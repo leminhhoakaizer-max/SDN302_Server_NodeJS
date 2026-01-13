@@ -1,12 +1,6 @@
 // day_01/src/config/swagger.js
 import swaggerJSDoc from "swagger-jsdoc";
 import path from "path";
-import { fileURLToPath } from "url";
-import express from "express";
-import swaggerUiDist from "swagger-ui-dist";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 // --- Cấu hình swagger-jsdoc ---
 const options = {
@@ -19,12 +13,12 @@ const options = {
     },
     servers: [
       { url: "http://localhost:3000", description: "Local server" },
-      { url: "https://sdn302-server-nodejs.vercel.app", description: "Vercel serverless" },
+      { url: "https://sdn302-server-nodejs.vercel.app", description: "Vercel serverless" }
     ],
     components: {
       securitySchemes: {
-        bearerAuth: { type: "http", scheme: "bearer", bearerFormat: "JWT" },
-      },
+        bearerAuth: { type: "http", scheme: "bearer", bearerFormat: "JWT" }
+      }
     },
     security: [{ bearerAuth: [] }],
   },
@@ -34,41 +28,47 @@ const options = {
   ],
 };
 
+// --- Tạo JSON spec từ swagger-jsdoc ---
 const swaggerSpec = swaggerJSDoc(options);
 
 // --- Hàm setup Swagger ---
 export const setupSwagger = (app) => {
-  // 1. Serve JSON schema
+  // 1. Serve JSON schema cho Swagger UI
   app.get("/api/swagger.json", (req, res) => res.json(swaggerSpec));
 
-  // 2. Serve toàn bộ static files Swagger UI (CSS/JS/fonts) trực tiếp
-  const swaggerDistPath = swaggerUiDist.getAbsoluteFSPath();
-  app.use("/api/docs", express.static(swaggerDistPath));
-
-  // 3. Serve HTML Swagger UI
+  // 2. Serve HTML Swagger UI bằng CDN (khuyến nghị cho Vercel)
   app.get("/api/docs", (req, res) => {
     res.send(`
       <!DOCTYPE html>
-      <html>
+      <html lang="en">
       <head>
         <meta charset="UTF-8">
-        <title>Swagger UI</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="/api/docs/swagger-ui.css" />
+        <title>Products API Documentation</title>
+        <!-- CSS Swagger UI từ CDN -->
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
+        <link rel="icon" type="image/png" href="https://unpkg.com/swagger-ui-dist@5/favicon-32x32.png" sizes="32x32" />
+        <style>
+          html { box-sizing: border-box; overflow-y: scroll; }
+          *, *:before, *:after { box-sizing: inherit; }
+          body { margin: 0; background: #fafafa; }
+        </style>
       </head>
       <body>
         <div id="swagger-ui"></div>
-        <!-- JS -->
-        <script src="/api/docs/swagger-ui-bundle.js"></script>
-        <script src="/api/docs/swagger-ui-standalone-preset.js"></script>
+        <!-- JS Swagger UI từ CDN -->
+        <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+        <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-standalone-preset.js"></script>
         <script>
           window.onload = () => {
             const ui = SwaggerUIBundle({
-              url: "/api/swagger.json",
+              url: "/api/swagger.json", // JSON endpoint
               dom_id: "#swagger-ui",
-              presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
-              layout: "StandaloneLayout",
-              deepLinking: true
+              deepLinking: true,
+              presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+              ],
+              layout: "StandaloneLayout"
             });
             window.ui = ui;
           };
@@ -78,6 +78,6 @@ export const setupSwagger = (app) => {
     `);
   });
 
-  console.log("Swagger UI setup complete: /api/docs, JSON: /api/swagger.json");
-  console.log("Number of paths found: ", Object.keys(swaggerSpec.paths || {}).length);
+  console.log("Swagger UI setup complete via CDN");
+  console.log("Number of paths found:", Object.keys(swaggerSpec.paths || {}).length);
 };
