@@ -75,35 +75,20 @@ console.log('Number of paths found: ', Object.keys(swaggerSpec.paths || {}).leng
 
 // Setup swagger middleware
 export const setupSwagger = (app) => {
-    // Option cho swagger UI
-    const swaggerOptions = {
-        explorer: true, // Bật search API
-        swaggerOptions: {
-            validatorUrl: null, // turnOff validator => Tránh CORS error
-        },
-    };
-
-    // Access to:
-    //  |_ Local server: http://localhost:3000/api-docs
-    //  |_ Vecel production: http://sdn302-server-nodejs.vercel.app
     app.use(
         '/api/docs',
         swaggerUi.serve,
-        swaggerUi.setup(swaggerSpec, swaggerOptions)
+        swaggerUi.setup(null, {
+            explorer: true,
+            swaggerOptions: {
+                url: '/api/swagger.json', // QUAN TRỌNG
+                validatorUrl: null,
+            },
+        })
     );
 
-    // Export Swagger JSON: rất quan trọng khi deploy
-    //      |_ Use for fontend
-    //      |_ Use for Postman/Swagger Hub
-    //      |_ Debug khi swagger UI error
     app.get('/api/swagger.json', (req, res) => {
-        res.setHeader("Content-Type", "application/json");
+        res.setHeader('Content-Type', 'application/json');
         res.status(200).json(swaggerSpec);
     });
 };
-
-// Explain:
-// CORS (Cross Origin Resoucre Sharing): cơ chế bảo mật của trình duyệt
-// Tránh CORS error:
-//      |_ enable broswers chia sẻ tài nguyên giữa các resources
-//      |_ Frontend giao tiếp với Backend khác domain 1 cách an toàn 
