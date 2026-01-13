@@ -31,8 +31,7 @@
     "migrate:products": "node ./src/utilities/migrateProducts.js",
     "migrate:categories": "node ./src/utilities/migrateCategories.js",
     "seed:categories": "node src/build/updateCategorySeed.build.js",
-    "seed:product-category": "node src/build/updateProductCategory.build.js",
-    "build": "echo \"No build step required for Node.js server\""
+    "seed:product-category": "node src/build/updateProductCategory.build.js"
   },
   "type": "module"
 }
