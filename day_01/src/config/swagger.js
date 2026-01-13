@@ -75,18 +75,16 @@ console.log('Number of paths found: ', Object.keys(swaggerSpec.paths || {}).leng
 
 // Setup swagger middleware
 export const setupSwagger = (app) => {
+    // Serve Swagger UI with swaggerSpec directly
     app.use(
         '/api/docs',
         swaggerUi.serve,
-        swaggerUi.setup(null, {
+        swaggerUi.setup(swaggerSpec, {
             explorer: true,
-            swaggerOptions: {
-                url: '/api/swagger.json', // QUAN TRỌNG
-                validatorUrl: null,
-            },
         })
     );
 
+    // Expose JSON anyway
     app.get('/api/swagger.json', (req, res) => {
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(swaggerSpec);
