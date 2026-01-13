@@ -1,19 +1,21 @@
 import mongoose from 'mongoose';
 
 const dbURL = process.env.MONGODB_URL;
+let isConnected = false;
 
-// connect to MogoDB => Luôn dùng [async/await] methods
 export const DBConnection = async () => {
   try {
     if (!dbURL) {
       throw new Error('MONGODB_URL is not defined');
     }
 
+    if (isConnected) return;
+
     await mongoose.connect(dbURL);
-    console.log('DB URL:', dbURL);
+    isConnected = true;
+
     console.log('Connected to MongoDB');
   } catch (error) {
-    console.error('Error connecting to MongoDB:', error.message);
-    process.exit(1);
+    console.error('MongoDB connection error:', error.message);
   }
 };
