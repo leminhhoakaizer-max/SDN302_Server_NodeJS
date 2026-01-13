@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "echo \"Build OK\""
+    "start": "node api/index.js"
   }
 }
