@@ -1,21 +1,22 @@
-// day_01/src/config/swagger.js
 import swaggerJSDoc from "swagger-jsdoc";
 import path from "path";
 
 // --- Cấu hình swagger-jsdoc ---
 const options = {
   definition: {
-    openapi: "3.0.0",
+    openapi: "3.0.0", // OpenAPI session
     info: {
       title: "Products API",
       version: "1.0.0",
       description: "API documentation for Product management",
     },
+    // List servlet run API (local && Vercel)
     servers: [
       { url: "http://localhost:3000", description: "Local server" },
       { url: "https://sdn302-server-nodejs.vercel.app", description: "Vercel serverless" }
     ],
     components: {
+        // JWT Bearer cho bảo mật API
       securitySchemes: {
         bearerAuth: { type: "http", scheme: "bearer", bearerFormat: "JWT" }
       }
@@ -23,6 +24,7 @@ const options = {
     security: [{ bearerAuth: [] }],
   },
   apis: [
+    // process.cwd(): đường dẫn hiện tại của project Node
     path.join(process.cwd(), "day_01/src/routes/*.js"),
     path.join(process.cwd(), "day_01/src/model/*.js"),
   ],
@@ -36,7 +38,8 @@ export const setupSwagger = (app) => {
   // 1. Serve JSON schema cho Swagger UI
   app.get("/api/swagger.json", (req, res) => res.json(swaggerSpec));
 
-  // 2. Serve HTML Swagger UI bằng CDN (khuyến nghị cho Vercel)
+  // 2. Serve HTML Swagger UI bằng CDN (Content Delivery Network)
+  // CSS + JS từ CDN của Swagger UI (unpkg.com/swagger-ui-dist)
   app.get("/api/docs", (req, res) => {
     res.send(`
       <!DOCTYPE html>
@@ -62,12 +65,14 @@ export const setupSwagger = (app) => {
           window.onload = () => {
             const ui = SwaggerUIBundle({
               url: "/api/swagger.json", // JSON endpoint
-              dom_id: "#swagger-ui",
-              deepLinking: true,
+              dom_id: "#swagger-ui", // container để render UI
+              deepLinking: true, // tạo URL trực tiếp tới từng endpoint
+              // layout và behavior mặc định.
               presets: [
                 SwaggerUIBundle.presets.apis,
                 SwaggerUIStandalonePreset
               ],
+              // giao diện đầy đủ, menu điều hướng, search, v.v.
               layout: "StandaloneLayout"
             });
             window.ui = ui;
