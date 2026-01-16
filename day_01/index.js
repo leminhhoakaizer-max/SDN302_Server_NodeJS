@@ -1,4 +1,5 @@
 // Load environment variable (.env)
+import 'dotenv/config'; 
 import express from 'express'
 import path from 'path';
 import cookieParser from 'cookie-parser';
@@ -20,7 +21,7 @@ import { setupSwagger } from './src/config/swagger.js';
 const app = express()
 
 // Call to [Connection database]
-DBConnection();
+await DBConnection();
 
 // Middleware for parsing request body
 app.use(cookieParser());
